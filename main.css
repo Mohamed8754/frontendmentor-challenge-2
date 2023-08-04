@@ -1,0 +1,200 @@
+body {
+  font-family: "Cairo", sans-serif;
+  font-family: "Hanken Grotesk", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+:root {
+  --Light-slate: hsl(252, 100%, 67%);
+  --Light-royal: hsl(241, 81%, 54%);
+  --Violet-blue: hsla(256, 72%, 46%, 1);
+  --Persian-blue: hsla(241, 72%, 46%, 0);
+  --Light-red: hsl(0, 100%, 67%);
+  --Orangey-yellow: hsl(39, 100%, 56%);
+  --Green-teal: hsl(166, 100%, 37%);
+  --Cobalt-blue: hsl(234, 85%, 45%);
+}
+/* start-global-ruls */
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* Small */
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+/* Medium */
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+/* Large */
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+p {
+  font-size: 18px;
+}
+/* end-global-ruls */
+/* start-des */
+.container {
+  display: grid;
+  grid-template-columns: 300px 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Hanken Grotesk", sans-serif;
+  background-color: white;
+  box-shadow: -1px 3px 8px 8px #eee;
+  padding-left: 0;
+  border-bottom-left-radius: 50px;
+  border-top-left-radius: 50px;
+  width: auto;
+}
+@media (max-width: 750px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 0;
+    left: 0;
+    transform: translate(0);
+    padding-right: 0;
+    border-top-right-radius: 50px;
+  }
+}
+.container .resulte {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-image: linear-gradient(
+    to bottom,
+    var(--Light-slate) 30%,
+    var(--Violet-blue) 70%
+  );
+  padding: 20px;
+  border-radius: 20px;
+}
+.container .resulte p:first-child {
+  color: #d7c8ff;
+}
+.container .resulte .number {
+  padding: 36px;
+  width: 117px;
+  background-image: linear-gradient(
+    to bottom,
+    var(--Violet-blue) 30%,
+    var(--Persian-blue) 100%
+  );
+  border-radius: 228px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.container .resulte .number span {
+  font-size: 70px;
+  color: white;
+}
+.container .resulte .number P {
+  margin: 0;
+  color: #989aa9;
+  position: relative;
+  top: -15px;
+}
+.container .resulte span {
+  color: white;
+  font-size: 25px;
+  margin-top: 10px;
+}
+.container .resulte p:nth-child(4) {
+  color: white;
+}
+.container .summary p,
+span {
+  margin: 0;
+  padding: 0;
+}
+.container .summary {
+  padding: 20px;
+  background-color: white;
+}
+.container .summary h3 {
+  font-size: 25px;
+  margin: 0px;
+  margin-bottom: 25px;
+}
+.container .summary .box {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  padding: 18px;
+}
+
+.container .summary .box:nth-child(2) {
+  background-color: #fff6f5;
+}
+.container .summary .box:nth-child(3) {
+  background-color: #fffbf2;
+}
+.container .summary .box:nth-child(4) {
+  background-color: #f2fbfa;
+}
+.container .summary .box {
+  background-color: #f3f3fd;
+}
+.container .summary .box .info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.container .summary .box .info img {
+  max-width: 30%;
+  margin-left: -3px;
+}
+.container .summary .box:nth-child(2) .info p {
+  color: var(--Light-red);
+  font-family: "Hanken Grotesk", sans-serif;
+}
+.container .summary .box:nth-child(3) .info p {
+  color: var(--Orangey-yellow);
+}
+.container .summary .box:nth-child(4) .info p {
+  color: var(--Green-teal);
+}
+.container .summary .box:nth-child(5) .info p {
+  color: var(--Cobalt-blue);
+}
+.container .summary .box .numbers {
+  display: flex;
+}
+
+.container .summary .box .numbers span:last-child {
+  color: #989aa9;
+  margin-left: 5px;
+}
+.container .summary input {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 18px;
+  color: white;
+  background-color: #303b59;
+  border-radius: 50px;
+  margin-top: 20px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.container .summary input:hover {
+  background-color: var(--Violet-blue);
+}
+
+/* end-des */
